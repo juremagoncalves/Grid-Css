@@ -1,0 +1,80 @@
+:root {
+  --bg-body: linear-gradient(180deg, #154580 0%, #041833 100%);
+  --blue-100: #154580;
+  --blue-200: #041833;
+  --grey-300: #c4c4c433;
+  --green-100: #84eec1;
+  --white: white;
+}
+
+body {
+  background: var(--bg-body);
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  color: var(--white);
+}
+
+.main {
+  background: var(--grey-300);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+i {
+  color: var(--blue-100);
+  background-color: var(--white);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  grid-template-areas:
+    "funk pop hiphop"
+    "rock rock hiphop"
+    "reggaeton reggaeton rap";
+}
+
+.item {
+  background-color: var(--blue-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.item-funk {
+  grid-area: funk;
+}
+
+.item-pop {
+  grid-area: pop;
+}
+
+.item-hipop {
+  grid-area:hiphop ;
+  background: var(--green-100);
+}
+
+.item-rock{
+    grid-area: rock;
+}
+
+.item-reggaeton{
+    grid-area: reggaeton;
+}
+
+.item-rap{
+    grid-area: rap;
+}
