@@ -32,7 +32,9 @@ i {
   border-radius: 50%;
   width: 2rem;
   height: 2rem;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
